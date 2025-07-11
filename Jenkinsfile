@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/ofc365/jenkin-proj.git'
+                git 'https://github.com/Vivek-vmk/jenkin-proj.git'
             }
         }
 
@@ -27,7 +27,7 @@ pipeline {
 
     post {
         success {
-            echo 'App deployed successfully at port 8080!'
+            echo 'App deployed successfully at port 8082!'
         }
         failure {
             echo 'Deployment failed!'
